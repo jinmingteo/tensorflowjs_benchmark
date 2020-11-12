@@ -5,7 +5,8 @@
   "main": "mnist-node.js",
   "dependencies": {
     "@tensorflow/tfjs": "^2.7.0",
-    "@tensorflow/tfjs-node": "^2.7.0"
+    "@tensorflow/tfjs-node": "^2.7.0",
+    "@tensorflow/tfjs-node-gpu": "^2.7.0"
   },
   "devDependencies": {},
   "scripts": {

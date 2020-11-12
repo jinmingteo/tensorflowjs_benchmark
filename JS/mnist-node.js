@@ -10,12 +10,13 @@ const run = async ({ epochs, batchSize = 32, modelSavePath = null }) => {
   model.summary();
 
   await data.loadData();
-
+  
   /* --------- TRAINING --------- */
 
   const { images: trainImages, labels: trainLabels } = data.getTrainData();
-
+  console.log("????");
   const trainStartTime = process.hrtime.bigint();
+  console.log("Trying to fit model");
   await model.fit(trainImages, trainLabels, { epochs, batchSize });
   const trainEndTime = process.hrtime.bigint();
   const trainDurationMs = (trainEndTime - trainStartTime) / 1e6;

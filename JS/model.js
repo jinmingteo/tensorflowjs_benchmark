@@ -1,4 +1,5 @@
-const tf = require("@tensorflow/tfjs-node");
+// const tf = require("@tensorflow/tfjs-node");
+const tf = require("@tensorflow/tfjs-node-gpu");
 
 const model = tf.sequential({
   layers: [
